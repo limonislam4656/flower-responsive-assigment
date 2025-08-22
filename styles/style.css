@@ -1,44 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .work-sans-normal {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
 }
-/* shared style */
 
+/* shared style */
+.black {
+    color: rgba(0, 0, 0, 1);
+}
+
+.orange {
+    color: rgba(233, 90, 8, 1);
+}
+
+.display {
+    display: flex;
+}
+
+.container {
+    max-width: 1140;
+    margin: auto;
+}
+
+.dark-3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    border: none;
+    padding: 26px 50px;
+    width: 17rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+
+}
 
 
 /* navbar style */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8.7rem;
     margin-top: 2rem;
+    margin-left: 150px;
+    margin-top: 30px;
 }
-.nav-right ul{
+
+.nav-right ul {
     display: flex;
     gap: 3rem;
-}
-nav ul{
     list-style: none;
 }
-nav figure img{
+
+nav ul {
+    
+}
+
+nav figure img {
     width: 8.5rem;
     width: 3.5rem;
 }
+
 nav ul li a {
     text-decoration: none;
 }
+
 .cart {
     display: flex;
     align-items: center;
 }
+
+.nav-left {
+    margin-left: 100px;
+}
+
+.nav-right {
+    margin-right: 130px;
+}
+
 #home {
     font-weight: 700;
     color: rgba(37, 36, 50, 1);
 }
-#shop, #aboutus {
+
+#shop,
+#aboutus {
     color: rgba(137, 135, 161, 1);
+}
+
+#cart-title {
+    color: rgba(0, 0, 0, 1);
+}
+
+.container-start {
+    margin-bottom: 120px;
+    margin-top: 30px
+}
+
+/* banner style */
+.banner-container {
+    display: flex;
+    height: 29rem;
+    align-items: end;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.banner-left {
+    flex: 1;
+}
+
+.banner-right {
+    flex: 1;
+}
+
+.banner-right img {
+    width: 570px;
+    height: 355px;
+}
+
+.banner-container .banner-left h1 {
+    font-family: Noto serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+/* plant-containern style */
+.plant-text-content {
+    text-align: center
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card-name {
+    font-weight: 500;
+    font-size: 1.37rem;
+}
+
+.card-price {
+    font-weight: 500;
+    font-size: 1.37rem;
+}
+
+.card {
+    text-align: center;
+    gap: 1.37rem;
+}
+
+.card-container img {
+    width: 16.87rem;
+    height: 20rem;
 }
