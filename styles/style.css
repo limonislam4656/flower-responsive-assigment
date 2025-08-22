@@ -1,180 +1,481 @@
+
+
+
+
+
+
+
+/* shared styles */
+
 * {
-    margin: 0;
-    padding: 0;
-}
-
-.work-sans-normal {
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-}
-
-/* shared style */
-.black {
-    color: rgba(0, 0, 0, 1);
-}
-
-.orange {
-    color: rgba(233, 90, 8, 1);
-}
-
-.display {
-    display: flex;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    background-color: rgb(245,248,255);
+    font-family: "Inter", sans-serif;
 }
 
 .container {
-    max-width: 1140;
+    max-width: 1140px;
     margin: auto;
-
 }
 
-.dark-3 {
-    color: rgba(0, 0, 0, 0.5);
+.orange {
+    color: rgb(233,90,8);
+}
+.dark {
+    color: rgb(0,0,0);
+}
+.light-dark {
+    color: rgba(0,0,0,0.5); 
+}
+.white {
+    color: rgb(255,255,255);
 }
 
 .btn {
-    background-color: rgba(233, 90, 8, 1);
-    color: white;
-    border: none;
-    padding: 26px 50px;
-    width: 17rem;
-    height: 3rem;
     font-size: 1rem;
     font-weight: 600;
+    border: none;
+    background-color: rgb(233,90,8);
+    color: white;
+    padding: 26px 50px 26px 50px;
+    padding-bottom: 3rem;
+    width: 17rem;
+    height: 3rem;
+}
 
-
+.section-title {
+    font-family:"Noto Serif", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
 }
 
 
-/* navbar style */
+
+
+
+
+
+
+/* navbar styles */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8.7rem;
+    margin-bottom: 8.75rem;
     margin-top: 2rem;
-  
 }
-
 .nav-right ul {
     display: flex;
-    gap: 3rem;
-    list-style: none;
+    gap: 3.5rem;
 }
-
-
-
 nav figure img {
     width: 8.5rem;
-    width: 3.5rem;
+    height: 5rem;
 }
-
+nav ul {
+    list-style: none;
+}
 nav ul li a {
     text-decoration: none;
 }
-
-.cart {
+#cart {
     display: flex;
     align-items: center;
 }
-
-
-
 #home {
     font-weight: 700;
-    color: rgba(37, 36, 50, 1);
+    color: rgb(37,36,50);
+}
+#shop, #about-us {
+    color: rgb(137,135,161);
+}
+#cart56 {
+    color: rgb(0,0,0);
 }
 
-#shop,
-#aboutus {
-    color: rgba(137, 135, 161, 1);
-}
-
-#cart-title {
-    color: rgba(0, 0, 0, 1);
-}
-
-.container-start {
-    margin-bottom: 120px;
-    margin-top: 30px
-}
-
-/* banner style */
+/* banner styles */
 .banner-container {
     display: flex;
     height: 29rem;
     align-items: end;
-    margin-left: 150px;
-    margin-right: 150px;
-}
 
+}
 .banner-left {
     flex: 1;
 }
-
 .banner-right {
     flex: 1;
 }
-
 .banner-right img {
-    width: 570px;
-    height: 355px;
+    width: 35.5rem;
+    height: 22rem;
+    /* width: 100%; */
 }
 
 .banner-container .banner-left h1 {
-    font-family: Noto serif;
+    font-family:"Noto Serif", serif;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
-/* plant-containern style */
+
+/* plant section styles */
+.plant-container {
+    margin-top: 7.5rem;
+}
 .plant-text-content {
-    text-align: center
+    text-align: center;
 }
-
+.f-name {
+    font-weight: 500;
+    font-size: 1.375rem;
+}
+.f-price {
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+.cards-container img {
+    width: 16.875rem;
+    height: 20rem;
+}
+.card {
+    text-align: center;
+}
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 1rem;
 }
 
-.card-name {
-    font-weight: 500;
-    font-size: 1.37rem;
-}
-
-.card-price {
-    font-weight: 500;
-    font-size: 1.37rem;
-}
-
-.card {
-    text-align: center;
-    gap: 1.25rem;
-    height: 30.25rem;
-    width: 16.875rem;
-}
-
-.card-container img {
-    width: 16.87rem;
-    height: 20rem;
-}
-/* plants lover */
-.plants-lover-container{
+/* plant lover section styles */
+.plant-lover-container {
+    height: 37.5rem;
     margin-top: 13rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: space-between;
 }
-.plants-lover-left .plants-lover-rigth{
+.plant-lover-left {
+    flex:1;
+}
+.plant-lover-right{
     flex: 1;
 }
-#parent{
+#parent {
+    position: relative;
+    
+}
+#child {
+    width: 18rem;
+    height: 18rem;
+    background: none;
+    position: absolute;
+    top: 2000px;
+    left: 550px;
+    /* transform: translate(-50%,-50%); */
+
+}
+
+
+/* latest deals section styles */
+.latest-deals-container{
+    margin-top: 8.5rem;
+    text-align: center;
+}
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+.img-container-left {
+    display: flex;
+    flex-direction: column;
+}
+.img-top {
+    /* background-image:url("./assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    text-align: center; */
+    height: 13rem;
+    width: 23rem;
+    width: 100%;
+    position: relative;
+    /* background-color: transparent; */
+    /* background-clip: text;
+    background-size: cover;
+    background-position: center; */
+
+    /* color: white; */
+    color: transparent;
+    margin-bottom: 1rem;
+}
+.img-bottom {
+    width: 100%;
+    position: relative;
+    height: 13rem;
+    width: 23rem;
+    border-radius: 1rem;
+}
+
+.img-container-right img {
+    width: 100%;
+    width: 47rem;
+    height: 26.5rem;
+}
+.img-container-right {
     position: relative;
 }
-#child{
-    width: 17.875rem;
-    height: 17.875rem;
-    background: none;
-    top: 200px;
-    right: 550px;
-    transform: translate(-50%,-50%);
+
+.text-on-img-center {
+    font-size: 2.5rem;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.b-plant, .a-plant {
+    font-size: 1.25rem;
+}
+.latest-deals-container img {
+    border-radius: 1rem;
+    filter:brightness(50%);
+}
+
+
+/* join section styles */
+.join-container img {
+    width: 100%;
+}
+.join-container {
+    height: 33.3rem;
+    max-width: 90rem;
+    margin:0 auto;
+    margin-top: 7.5rem;
+    position: relative;
+}
+.join-title-on-center {
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.join-container input {
+    width: 40rem;
+    height: 3rem;
+    border: none;
+    background-color: white;
+}
+.s-btn {
+    height: 3rem;
+    width: 11.5rem;
+}
+.inp-center {
+    /* color: white;
+    background-color: transparent; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inp-center input::placeholder {
+    padding-left: 2rem;
+    padding-top: 2.5rem;
+}
+
+
+/* footer styles */
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-left figure img {
+    width: 8.5rem;
+    height: 5rem;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ul-left,.ul-right{
+    display: flex;
+    flex-direction: column;   
+}
+.ul-left p, .ul-right p {
+    padding-top:0.4rem;
+    padding-bottom:0.4rem;
+    color: rgb(101,114,128);
+}
+
+
+.footer-right figure img {
+    padding-right: 1rem;
+}
+
+
+@media only screen and (max-width:576px) {
+    *{
+        max-width:400px;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* nav {
+        margin-top: 0.5rem;
+    } */
+    .banner-container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 15rem;
+    }
+    .banner-right {
+        order:-1;
+    }
+    
+    #home,#shop,#about-us {
+        display: none;
+    }
+    .cards-container img {
+        width: 171px;
+        height: 196.5px;
+    }
+    .btn {
+        width: 171px;
+        height: 50px;
+        padding: 10px;
+
+    }
+    .card {
+        width: 100%;
+        width: 180px;
+    }
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plant-lover-container{
+        flex-direction:column;
+        margin-top: 5rem;
+
+        margin-bottom: 25rem;
+    }
+    .plant-lover-right h1 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align:start;
+    }
+    .plant-lover-right h1 br {
+        display: none;
+    }
+    .plant-lover-right ul li {
+        padding-bottom: 1.5rem;
+    }
+    .latest-deals-container p br{
+        display: none;
+    }
+    .img-container img {
+        width: 366px;
+        height: 206px;
+        margin-top: 20px;
+    }
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-bottom img {
+        border-radius: 0;
+    }
+
+    .join-container {
+        height: 275px;
+        width: 400px;
+        /* margin-bottom: 40rem; */
+    }
+    .join-container h1 {
+        font-size:20px;
+    }
+    .join-container img {
+        /* width: 430px; */
+        height: 275px;
+        /* margin: 0; */
+        width: 100%;
+        /* height: auto;
+        display: block; */
+        object-fit: cover;
+    
+
+    }
+    .join-container input {
+        height: 3rem;
+        width: 200px;
+    }
+    .join-container button {
+        height: 3rem;
+        width: 100px;
+    }
+    .join-title-on-center {
+        width: 80%;
+        top: 40%;
+    }
+    #child{
+        display: none;
+    }
+    input {
+        width: 13rem;
+        height: 3rem;
+    }
+    .footer {
+        flex-direction: column;
+        /* text-align: left; */
+        /* align-items: flex-start; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+        height: 80rem;
+    }
+    
+    
+    .footer-left img {
+        width: 180px;
+        height: 109px;
+        margin-bottom: 2rem;
+    }
+    .footer-left {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .ul-left,.ul-right{ 
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .footer-right {
+        margin: 0.5rem;
+    }
+    
 }
